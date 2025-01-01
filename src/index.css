@@ -407,7 +407,6 @@ white-space: normal; /* Prevent single-line truncation */
   margin-top: auto; /* Push the button to the bottom */
 }
 
-
 #features{
   width:100%;
   height:120vh;
@@ -554,58 +553,137 @@ background-color: transparent;
   border: 2px solid #000000;
 }
 
-#about{
-  margin-top:100px ;
-width:100%;
-height: 120vh;
-box-sizing: border-box;
-display: flex;
-align-items: center;
-justify-content: space-between;
-padding: 50px 5% 0px 5%;
-position: relative;
+#about {
+  margin-top: 100px;
+  width: 100%;
+  height: auto; /* Adjusted to auto to allow for dynamic content */
+  box-sizing: border-box;
+  display: flex;
+  flex-direction: column; /* Allows stacking content vertically */
+  align-items: center;
+  justify-content: center;
+  padding: 50px 5%;
+  position: relative;
+  background-color: #000; /* Ensure a consistent dark background */
 }
 
-.about-text{
-  width: 45%;
+.about-text {
+  width: 80%; /* Adjusted for better responsiveness */
   color: #fff;
-  list-style: circle;
+  text-align: center;
+  margin-bottom: 30px;
 }
-.about-text h1{
-font-size: 3rem;
-color:#ffffff;
+
+.about-text h1 {
+  font-size: 3rem;
+  color: #ffffff;
   font-weight: 500;
   margin: 0px;
-padding: 0px;
+  padding: 0px;
 }
-.about-text p{
-  width: 80%;
-font-size: 1.2rem;
-color:#cecece;
 
+.about-text p {
+  font-size: 1.2rem;
+  color: #cecece;
+  margin: 0 auto;
+  line-height: 1.6;
 }
-.about-text button{
+
+.about-text button {
   margin-top: 20px;
-width: 140px;
-height: 45px;
-border-radius: 10px;
-border: none;
+  width: 140px;
+  height: 45px;
+  border-radius: 10px;
+  border: none;
   outline: none;
   color: #000000;
-background-color:#ffffff;
+  background-color: #ffffff;
 }
-.about-text button:hover{
+
+.about-text button:hover {
   box-shadow: 5px 10px 30px rgba(253, 253, 253, 0.336);
-background-color: rgb(255, 255, 255);
+  background-color: rgb(255, 255, 255);
   transition: all ease 0.3s;
   color: #000000;
 }
-.about-image{
-  width: 50%;
+
+.about-image {
+  width: 100%;
+  text-align: center; /* Center the image horizontally */
+  margin-bottom: 30px;
 }
-.about-image img{
-width: 600px;
+
+.about-image img {
+  width: 100%;
+  max-width: 600px;
+  height: auto;
+  border-radius: 10px;
 }
+
+.payment-section {
+  margin-top: 20px;
+  width: 100%;
+  max-width: 500px; /* Limit width for better layout */
+  background-color: #222; /* Matches the overall theme */
+  padding: 20px;
+  border-radius: 10px;
+  text-align: center;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.payment-section h2 {
+  font-size: 24px;
+  color: #ffffff;
+  margin-bottom: 10px;
+}
+
+.payment-section p {
+  display: none; /* Hides unnecessary text */
+}
+
+.qr-image img {
+  max-width: 150px;
+  height: auto;
+  border: 2px solid #ccc;
+  border-radius: 8px;
+}
+/* Payment Card Styling */
+.payment-card {
+  margin-top: 30px;
+  padding: 30px; /* Increased padding for better spacing */
+  border: 1px solid #ccc;
+  border-radius: 12px; /* Slightly rounded corners */
+  box-shadow: 0 6px 10px rgba(0, 0, 0, 0.15); /* Larger shadow for depth */
+  max-width: 600px; /* Increased width */
+  margin-left: auto;
+  margin-right: auto;
+  text-align: center;
+  background-color: #ffffff; /* Brighter background for contrast */
+}
+
+.payment-header {
+  background-color: #000000;
+  color: white;
+  font-size: 22px; /* Larger font for header */
+  padding: 12px;
+  border-radius: 10px 10px 0 0;
+  text-align: center;
+  font-weight: bold; /* Emphasized header */
+}
+
+.payment-content h3 {
+  font-size: 22px; /* Larger font size */
+  margin: 15px 0;
+}
+
+.payment-content img {
+  width: 200px; /* Increased size for better visibility */
+  height: 200px;
+  margin: 15px 0;
+  border: 2px solid #ccc; /* Slightly thicker border */
+  border-radius: 8px; /* More rounded corners for the image */
+}
+
 /* Contact Section Styling */
 /* General Styling */
 #contact {

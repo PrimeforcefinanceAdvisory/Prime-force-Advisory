@@ -5,7 +5,6 @@ import fimage2 from '../images/2.svg';
 import fimage3 from '../images/3.svg';
 import fimage4 from '../images/4.svg';
 import fimage5 from '../images/5.svg';
-import fimage6 from '../images/6.svg';
 
 function Feature() {
   return (
@@ -17,7 +16,6 @@ function Feature() {
         <Featurebox image={fimage3} title="Certified Advisors"/>
         <Featurebox image={fimage4} title="High Reward, Low Risk"/>
         <Featurebox image={fimage5} title="Robust Risk Management"/>
-        <Featurebox image={fimage6} title="SEBI Registered"/>
       </div>
     </div>
   )
